@@ -17,6 +17,17 @@ def make_example_potion(name):
 
 
 def make_python_expert_potion(name):
+    """Makes the "Python Expert" potion.
+
+    Parameters
+    ----------
+    name : str
+        Potion brewer's name
+
+    Returns
+    -------
+    Potion object
+    """
     my_potion = potions.potion.Potion(name=name)
     # Step 1: Set up your pewter cauldron and light a fire underneath it.
     my_potion.setup(container=potions.tools.equipment.pewter_cauldron, heat_source=potions.tools.equipment.fire)
