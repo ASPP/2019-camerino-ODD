@@ -17,8 +17,17 @@ def make_example_potion(name):
 
 
 def make_python_expert_potion(name):
+    my_potion = potions.potion.Potion(name=name)
+    # Step 1: Set up your pewter cauldron and light a fire underneath it.
+    my_potion.setup(container=potions.tools.equipment.pewter_cauldron, heat_source=potions.tools.equipment.fire)
+    # Step 2: Add fish eyes, unicorn hair and tea leaves and stir 5 times clockwise.
+    my_potion.add_ingredients(ingredients=[potions.tools.ingredients.fish_eyes,
+                                           potions.tools.ingredients.unicorn_hair,
+                                           potions.tools.ingredients.tea_leaves])
+    # Step 3: Let simmer for 2 hours.
+    potions.tools.cooking.simmer(my_potion, duration=2)
 
-    pass
+    return my_potion
 
 
 if __name__ == '__main__':
