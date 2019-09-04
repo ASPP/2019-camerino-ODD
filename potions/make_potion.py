@@ -17,6 +17,24 @@ def make_example_potion(name):
 
 
 def make_python_expert_potion(name):
+    """ Makes a python expert potion.
+
+    Recipe
+    ------
+    1. Set up your pewter cauldron and light a fire underneath it.
+    2. Add fish eyes, unicorn hair and tea leaves.
+    3. Stir anti-clockwise.
+    4. Simmer for 2 hours.
+
+    Parameters
+    ----------
+    name : string
+        Name of the witch or wizard.
+
+    Returns
+    -------
+    potions.potion
+    """
 
     my_potion = potions.potion.Potion(name=name)
     # Set up your pewter cauldron and light a fire underneath it.
