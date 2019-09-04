@@ -4,6 +4,7 @@ import potions.tools.ingredients
 import potions.tools.cooking
 import potions.tools.inspection
 
+from potions.tools import ingredients, cooking
 
 def make_example_potion(name):
 
@@ -39,12 +40,11 @@ def make_python_expert_potion(name):
     potions.tools.cooking.simmer(my_potion, duration=2)
 
     return my_potion
-
+  
 
 if __name__ == '__main__':
 
     my_name = 'Potter'
-    my_potion = make_example_potion(name=my_name)
+    my_potion = make_python_expert_potion(my_name)
     # Let Snape inspect the potion
-    potions.tools.inspection.inspection_by_Snape(potion=my_potion, target_potion='example_potion')
-
+    potions.tools.inspection.inspection_by_Snape(potion=my_potion, target_potion='python_expert')
